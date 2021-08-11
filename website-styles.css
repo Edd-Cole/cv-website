@@ -85,6 +85,18 @@
     height: 100%;
 }
 
+.body h2 {
+    text-decoration: underline;
+    color: royalblue;
+    position: relative;
+    left: 200px;
+}
+
+.body p {
+    position: relative;
+    left: 250px;
+}
+
 .footer {
     background-color: gray;
     grid-column: 1 /1;
