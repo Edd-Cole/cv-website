@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 36px 3200px 150px;
+    grid-template-rows: 300px 36px 3500px 150px;
 }
 
 .header {
@@ -137,6 +137,8 @@ body iframe {
 
 .footer .leftFooter {
     float: left;
+    position: relative;
+    margin-left: 50px;
 }
 
 .footer .rightFooter {

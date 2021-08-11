@@ -7,6 +7,42 @@
     <meta name="keywords" content="Edd Cole, Edd Kleszcz, Software, Engineering, Development, Java, JavaScript, Node.js, HTML, CSS, Agile, TDD">
     <link rel="stylesheet" href="./website-styles.css" type="text/css">
     <link rel="script" href="website-scripts.js" type="text/javascript">
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 100%;
+            grid-template-rows: 300px 36px 1000px 150px;
+        }
+        
+        .contactSubmit {
+            position: inherit;
+            background-color: lightskyblue;
+            color: black;
+            border-radius: 5px;
+            width: 150px;
+            height: 50px;
+            border-color: royalblue;
+            margin-left: 25px;
+            font-size: larger;
+            font-weight: bold;
+        }
+        
+        .contactSubmit:hover {
+            background-color: royalblue;
+            cursor: pointer;
+            color: white;
+        }
+        
+        .contactSubmit:active {
+            background-color: blue;
+            color: white;
+        }
+        
+        .centre {
+            position: relative;
+            margin-left: 250px;
+        }
+    </style>
 </head>
 <div class="container">
     <div class="header">
@@ -66,6 +102,13 @@
     <div class="body">
         <h1>Contact Me</h1>
         <p>Email address: LinkedIn</p>
+        <form class="centre" action="mailto:edd_kleszcz@hotmail.co.uk" method="POST" enctype="multipart/form-data" name="ContactForm">
+            Name: *<br>
+            <input type="text" size="20" name="ContactName" required><br><br> Email: *<br>
+            <input type="text" size="50" name="ContactCompany" pattern="\w+@\w+\..*[a-z]" maxlength="30" required><br><br> Message: *<br>
+            <textarea rows="20" cols="150" name="ContactMessage" required></textarea><br><br>
+            <input class="contactSubmit" type="submit" value="Send"></input>
+        </form>
     </div>
     <div class="footer">
         <div class="leftFooter">
