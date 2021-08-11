@@ -8,9 +8,8 @@
     <style>
         .container {
             display: grid;
-            height: 1000px;
             grid-template-columns: 100%;
-            grid-template-rows: 30% 5% 60% 15%;
+            grid-template-rows: 300px 36px 1000px 100px;
         }
         
         .header {
@@ -21,6 +20,17 @@
             height: 100%;
         }
         
+        .header .introPara {
+            font-weight: bold;
+            position: relative;
+            float: center;
+            text-align: left;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            line-height: 20px;
+            left: 200px;
+            top: 80px;
+        }
+        
         .header p {
             size: 18pt;
             color: black;
@@ -28,11 +38,42 @@
         }
         
         .menuBar {
+            grid-template-columns: 16% 16% 16% 16% 16% 16%;
             background-color: blue;
             grid-column: 1 /1;
             grid-row: 2 / 3;
             width: 100%;
             height: 100%;
+        }
+        
+        .menuBar .menuClick {
+            position: relative;
+        }
+        
+        .menuBar ul li {
+            width: 16.65%;
+            height: 36px;
+            float: left;
+            display: block;
+            position: relative;
+            text-decoration: none;
+            bottom: 16px;
+        }
+        
+        .menuBar p {
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-size: 14pt;
+            font-weight: bold;
+            color: white;
+            position: relative;
+            float: center;
+            left: 80px;
+            bottom: 12px;
+        }
+        
+        .menuBar p:hover {
+            color: black;
+            cursor: pointer;
         }
         
         .body {
@@ -55,8 +96,59 @@
     </script>
 </head>
 <div class="container">
-    <div class="header"></div>
-    <div class="menuBar"></div>
+    <div class="header">
+        <div class="introPara">
+            <h1>Edd Kleszcz</h1>
+            <h2>Junior Java Developer</h2>
+            <h2>Beyond Coding</h2>
+        </div>
+    </div>
+    <div class="menuBar">
+        <ul>
+            <div class="menuClick">
+                <a href="./home_page.html">
+                    <li>
+                        <p>Home</p>
+                    </li>
+                </a>
+            </div>
+            <div class="menuClick">
+                <a href="./cv.html">
+                    <li>
+                        <p>CV</p>
+                    </li>
+                </a>
+            </div>
+            <div class="menuClick">
+                <a href="./projects.html">
+                    <li>
+                        <p>Projects</p>
+                    </li>
+                </a>
+            </div>
+            <div class="menuClick">
+                <a href="./interests.html">
+                    <li>
+                        <p>Interests</p>
+                    </li>
+                </a>
+            </div>
+            <div class="menuClick">
+                <a href="./blog.html">
+                    <li>
+                        <p>Blog</p>
+                    </li>
+                </a>
+            </div>
+            <div class="menuClick">
+                <a href="./contact.html">
+                    <li>
+                        <p>Contact</p>
+                    </li>
+                </a>
+            </div>
+        </ul>
+    </div>
     <div class="body"></div>
     <div class="footer"></div>
 </div>
