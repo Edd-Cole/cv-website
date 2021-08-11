@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 36px 2650px 150px;
+    grid-template-rows: 300px 36px 3200px 150px;
 }
 
 .header {
@@ -93,23 +93,38 @@
     text-decoration: underline;
     color: royalblue;
     position: relative;
-    left: 200px;
+    margin-left: 200px;
 }
 
 .body h2 {
     color: lightskyblue;
     position: relative;
-    left: 225px;
+    margin-left: 225px;
 }
 
 .body h3 {
     position: relative;
-    left: 250px;
+    margin-left: 275px;
 }
 
 .body p {
     position: relative;
-    left: 250px;
+    margin-left: 250px;
+}
+
+.body audio {
+    position: relative;
+    margin-left: 275px;
+}
+
+.body ul {
+    position: relative;
+    margin-left: 275px;
+}
+
+body iframe {
+    position: relative;
+    margin-left: 275px;
 }
 
 .footer {
