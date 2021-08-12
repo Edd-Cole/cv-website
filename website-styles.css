@@ -122,9 +122,20 @@
     margin-left: 275px;
 }
 
-body iframe {
+.body iframe {
     position: relative;
     margin-left: 275px;
+}
+
+.body table {
+    position: relative;
+    margin-left: 275px;
+}
+
+.body th,
+td {
+    padding: 10px;
+    border-spacing: 10px;
 }
 
 .footer {

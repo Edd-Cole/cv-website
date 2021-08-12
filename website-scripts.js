@@ -3,21 +3,21 @@ addEventListener("click", sendEmail, false)
 
 function createTransporter(service, user, pass) {
     const transporter = nodemailer.createTransport({
-        service,
+        service: service,
         auth: {
-            user,
-            pass
+            user: user,
+            pass: pass
         }
     })
     return transporter;
 }
 
-function createMailOptions(from, to, text) {
+function createMailOptions(text) {
     const mailOptions = {
-        from,
-        to,
+        from: abc,
+        to: "edd_kleszcz@hotmail.co.uk",
         subject: "Message from CV Website",
-        text
+        text: text
     }
     return mailOptions;
 }
@@ -29,9 +29,9 @@ function createEmail(transporter, mailOptions) {
     })
 }
 
-const sendEmail = async(service, user, pass, from, to, text) => {
+const sendEmail = async(service, user, pass, text) => {
     const transporter = createTransporter(service, user, pass);
-    const mailOptions = createMailOptions(from, to, text);
+    const mailOptions = createMailOptions(text);
     const email = await createEmail(transporter, mailOptions);
     return email;
 }
