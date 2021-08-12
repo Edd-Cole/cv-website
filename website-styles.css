@@ -156,6 +156,7 @@ td {
     float: right;
     justify-content: end;
     text-justify: right;
+    margin-right: 10px;
 }
 
 .footer ul {
