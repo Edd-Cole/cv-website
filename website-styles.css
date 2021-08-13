@@ -70,6 +70,7 @@
     height: 100%;
     background-color: darkgray;
     position: relative;
+    cursor: pointer;
 }
 
 #menu li ul {
