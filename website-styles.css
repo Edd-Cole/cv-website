@@ -58,6 +58,8 @@
     height: 100%;
     padding: 0px;
     margin: 0px;
+    box-sizing: border-box;
+    padding-left: 100px;
 }
 
 #menu li {
@@ -117,6 +119,10 @@
 
 #menu .highlight:hover {
     color: lightskyblue;
+}
+
+#menu .highlight:active {
+    color: royalblue;
 }
 
 .menu li:hover p {
