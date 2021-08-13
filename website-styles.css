@@ -1,7 +1,7 @@
 .container {
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 300px 36px 3500px 150px;
+    grid-template-rows: 300px 36px auto 150px;
 }
 
 .header {
@@ -143,6 +143,7 @@
     grid-row: 3/4;
     width: 75%;
     height: 100%;
+    min-height: 465px;
 }
 
 .body h1 {
@@ -232,4 +233,33 @@ td {
 .footer a:hover {
     color: lightskyblue;
     cursor: pointer;
+}
+
+.contactSubmit {
+    position: inherit;
+    background-color: lightskyblue;
+    color: black;
+    border-radius: 5px;
+    width: 150px;
+    height: 50px;
+    border-color: royalblue;
+    margin-left: 25px;
+    font-size: larger;
+    font-weight: bold;
+}
+
+.contactSubmit:hover {
+    background-color: royalblue;
+    cursor: pointer;
+    color: white;
+}
+
+.contactSubmit:active {
+    background-color: blue;
+    color: white;
+}
+
+.centre {
+    position: relative;
+    margin-left: 250px;
 }
