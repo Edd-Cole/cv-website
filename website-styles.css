@@ -10,6 +10,7 @@
     grid-row: 1 / 2;
     width: 100%;
     height: 100%;
+    box-sizing: border-box;
 }
 
 .header .introPara {
@@ -19,8 +20,9 @@
     text-align: left;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     line-height: 20px;
-    left: 200px;
+    margin-left: 200px;
     top: 80px;
+    box-sizing: border-box;
 }
 
 .header img {
@@ -29,7 +31,8 @@
     float: right;
     position: relative;
     bottom: 143px;
-    right: 200px;
+    margin-right: 200px;
+    box-sizing: border-box;
 }
 
 .header p {
@@ -39,7 +42,7 @@
 }
 
 .menuBar {
-    grid-template-columns: 16% 16% 16% 16% 16% 16%;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
     background-color: darkgray;
     grid-column: 1 /1;
     grid-row: 2 / 3;
@@ -47,37 +50,84 @@
     height: 100%;
 }
 
-.menuBar .menuClick {
+#menu {
     position: relative;
+    grid-template-columns: 16.6% 16.6% 16.6% 16.6% 16.6% 16.6%;
+    background-color: darkgray;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    margin: 0px;
 }
 
-.menuBar ul li {
-    width: 16.65%;
-    height: 36px;
+#menu li {
     float: left;
+    list-style-type: none;
+    padding: 0 0 0 0;
+    width: 15%;
+    height: 100%;
+    background-color: darkgray;
+    position: relative;
+}
+
+#menu li ul {
+    background-color: darkgray;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+}
+
+#menu li ul li {
+    float: none;
+    list-style-type: none;
+    width: 16.65%;
+    padding: 3px 2px 3px 0px;
+    margin: 0px;
+    width: 100%;
+    z-index: 2;
+}
+
+.menu:hover .dropMenu {
     display: block;
-    position: relative;
-    text-decoration: none;
-    bottom: 16px;
+    background-color: darkgray;
 }
 
-.menuBar p {
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
-    font-size: 14pt;
-    font-weight: bold;
-    color: black;
-    position: relative;
-    float: center;
-    left: 80px;
-    bottom: 12px;
-}
-
-.menuBar p:hover {
-    color: lightskyblue;
+.menu .dropMenu {
+    display: none;
     cursor: pointer;
+    background-color: darkgray;
 }
 
-.menuBar p:active {
+.dropMenu:hover {
+    display: block;
+    background-color: darkgray;
+}
+
+#menu a {
+    text-decoration: none;
+}
+
+#menu p {
+    margin: auto;
+    padding-top: 7px;
+    padding-left: 30px;
+    color: white;
+    font-weight: bold;
+}
+
+#menu .highlight:hover {
+    color: lightskyblue;
+}
+
+.menu li:hover p {
+    color: lightskyblue;
+}
+
+#menu li ul li:hover p {
+    color: lightskyblue;
+}
+
+#menu li ul li:active p {
     color: royalblue;
 }
 
