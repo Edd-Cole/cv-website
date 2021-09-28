@@ -283,3 +283,9 @@ td {
     background: #007bb5;
     color: white;
 }
+
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}

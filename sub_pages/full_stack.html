@@ -6,10 +6,11 @@
     <meta name="description" content="Information gateway about myself, professionally and personally">
     <meta name="keywords" content="Edd Cole, Edd Kleszcz, Software, Engineering, Development, Java, JavaScript, Node.js, HTML, CSS, Agile, TDD">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./website-styles.css" type="text/css">
-    <script rel="script" src="website-scripts.js" type="text/javascript" defer></script>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" href="../website-styles.css" type="text/css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src="https://smtpjs.com/v3/smtp.js " defer></script>
+    <script rel="script" src="website-scripts.js" type="text/javascript" defer></script>
 </head>
 
 <body>
@@ -20,21 +21,21 @@
                 <h2>Junior Java Developer</h2>
                 <h2>Beyond Coding</h2>
             </div>
-            <img src="./files/Headshot.JPG">
+            <img src="../files/Headshot.JPG">
         </div>
         <div class="menuBar">
             <ul id="menu">
-                <li class="menu">
+                <li class="menu" href="./home_page.html">
                     <a href="./home_page.html">
                         <p class="highlight">Home</p>
                     </a>
                 </li>
-                <li class="menu">
+                <li class="menu" href="./cv.html">
                     <a href="./cv.html">
                         <p class="highlight">CV</p>
                     </a>
                 </li>
-                <li class="menu">
+                <li class="menu" href="./projects.html">
                     <a href="./projects.html">
                         <p class="highlight">Projects</p>
                     </a>
@@ -63,7 +64,7 @@
                         </ul>
                     </div>
                 </li>
-                <li class="menu">
+                <li class="menu" href="./interests.html">
                     <a href="./interests.html">
                         <p class="highlight">Interests</p>
                     </a>
@@ -102,61 +103,17 @@
                         </ul>
                     </div>
                 </li>
-                <li class="menu">
+                <li class="menu" href="./blog.html">
                     <a href="./blog.html">
                         <p class="highlight">Blog</p>
                     </a>
                 </li>
-                <li class="menu">
+                <li class="menu" href="./contact.html">
                     <a href="./contact.html">
                         <p class="highlight">Contact</p>
                     </a>
                 </li>
             </ul>
         </div>
-        <div class="body">
-            <h1>Contact Me</h1>
-            <form class="centre" action="mailto:edd_kleszcz@hotmail.co.uk" method="POST" enctype="multipart/form-data" name="ContactForm">
-                <label for="postName">Name: *</label><br>
-                <input id="postName" type="text" size="20" name="ContactName" placeholder="John Smith" required><br><br>
-                <label for="postEmail">Email: *</label><br>
-                <input id="postEmail" type="text" size="50" name="ContactCompany" pattern="\w+@\w+\..*[a-z]" maxlength="30" placeholder="johnsmith@gmail.com" required><br><br>
-                <label for="postMessage">Message: *</label>
-                <textarea id="postMessage" rows="20" cols="150" name="ContactMessage" placeholder="Hi, very interested in having a chat with you..." required></textarea><br><br>
-                <input id="sendEmail" class="contactSubmit" type="submit" value="Send"></input>
-            </form>
-            <br><br>
-        </div>
-        <div class="footer">
-            <div class="leftFooter">
-                <ul>
-                    <a href="./home_page.html">
-                        <li>Home</li>
-                    </a>
-                    <a href="./cv.html">
-                        <li>CV</li>
-                    </a>
-                    <a href="projects.html">
-                        <li>Projects</li>
-                    </a>
-                    <a href="./interests.html">
-                        <li>Interests</li>
-                    </a>
-                    <a href="./blog.html">
-                        <li>Blog</li>
-                    </a>
-                    <a href="contact.html">
-                        <li>Contact</li>
-                    </a>
-                </ul>
-            </div>
-            <div class="rightFooter">
-                <p>Searching for a Java Development<br>or Data Science role.</p>
-                <a href="https://www.linkedin.com/in/eddkleszcz/" class="fa fa-linkedin" style="color:white"> </a>
-            </div>
-        </div>
     </div>
-
 </body>
-
-</html>

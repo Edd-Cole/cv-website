@@ -6,7 +6,7 @@ First front end project, a responsive website about myself
 [ ] create email server for contact page to work
 [ ] copyright music
 [ ] Attach projects
-[ ] Create drop down menu
+[x] Create drop down menu
 [ ] Make responsive to different screen sizes
 [ ] Add accessibility
 [ ] Add blog post pages
