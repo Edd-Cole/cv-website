@@ -289,3 +289,10 @@ td {
     top: 0;
     width: 100%;
 }
+
+.img {
+    position: relative;
+    width: 500px;
+    height: auto;
+    left: 300px;
+}
