@@ -1,4 +1,5 @@
 import "./website-styles.css"; 
+import headshot from "./files/Headshot.JPG";
 
 const Header = () => {
 
@@ -8,7 +9,7 @@ const Header = () => {
                 <h1>Edd Kleszcz</h1>
                 <h2>Junior Developer</h2>
             </div>
-            <img src="./files/Headshot.JPG" />
+            <img src={headshot}  />
         </div>
     )
 }
