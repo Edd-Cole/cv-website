@@ -27,7 +27,7 @@ const Footer = () => {
             </div>
             <div className="rightFooter">
                 <p>Searching for a Junior Development<br />or Data Science role.</p>
-                <a href="https://www.linkedin.com/in/eddkleszcz/" className="fa fa-linkedin" style={{color: "white"}}> </a>
+                <a href="https://www.linkedin.com/in/eddkleszcz/" className="fa fa-linkedin" style={{color: "white"}}>LinkedIn</a>
             </div>
         </div>
     )
