@@ -1,8 +1,8 @@
 import "./website-styles.css";
-import carried from "../audios/carried_away.mp3";
-import gone from "../audios/Gone.mp3";
-import laced from "../audios/laced_peach.mp3";
-import carriedAcoustic from "../audios/carried_away_acoustic.mp3";
+import carried from "./audios/carried_away.mp3";
+import gone from "./audios/Gone.mp3";
+import laced from "./audios/laced_peach.mp3";
+import carriedAcoustic from "./audios/carried_away_acoustic.mp3";
 
 const Interests = () => {
     return (
