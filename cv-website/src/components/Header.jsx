@@ -1,5 +1,5 @@
 import "./website-styles.css"; 
-import headshot from "./files/Headshot.JPG";
+import headshot from "./files/headshot2.JPG";
 
 const Header = () => {
 
